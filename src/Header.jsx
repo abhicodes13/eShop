@@ -18,18 +18,18 @@ function Header() {
 </div>
 <div className="header__nav">
   <div className="nav__item">
-<span className="nav__itemlineOne">Hello Guest</span>
-<span className="nav__itemlineTwo">Sign IN</span>
+<span className="nav__itemLineOne">Hello Guest</span>
+<span className="nav__itemLineTwo">Sign in</span>
   </div>
 
   <div className="nav__item">
   <span className="nav__itemLineOne">Your</span>
-<span className="nav__itemlineTwo">Shop</span>
+<span className="nav__itemLineTwo">Shop</span>
   </div>
 
   <div className="nav__item">
-  <ShoppingBasketRoundedIcon fontSize='large' className='nav__itemBasket'/>
-<span className="nav__basketCount">0</span>
+  <ShoppingBasketRoundedIcon className='nav__itemBasket'/>
+<span className="nav__itemLineTwo nav__basketCount">0</span>
   </div>
     </div>
     </div>
