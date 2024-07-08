@@ -1,6 +1,7 @@
 import React from "react";
-import img from "./com.jpg";
+import img from "./home.png";
 import "./Home.css";
+import Prod from "./Prod";
 
 function Home() {
   return (
@@ -8,15 +9,17 @@ function Home() {
       <div className="home">
         <div className="home__container">
           <img className="home__image" src={img} alt="ecommerce" />
-          <div className="product">
-            <h1 className="title">title</h1>
-            <h2 className="price">30$</h2>
-            <strong>⭐️</strong>
-            <img
-              src="https://m.media-amazon.com/images/I/815E5aShTqL._AC_SX569_.jpg"
-              alt="tv"
-            />
-            <button>Add to Basket</button>
+          <div className="home__row">
+            <Prod />
+            <Prod />
+          </div>
+          <div className="home__row">
+            <Prod />
+            <Prod />
+            <Prod />
+          </div>
+          <div className="home__row">
+            <Prod />
           </div>
         </div>
       </div>
