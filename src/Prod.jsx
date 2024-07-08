@@ -1,23 +1,17 @@
 import React from "react";
 import "./Product.css";
-function Prod() {
+function Prod({ title, price, image }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>
-          Queen Bed Frame with Headboard,Linen Upholstered Bed Frame with Wood
-          Slats Support,No Box Spring Needed
-        </p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>30</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">⭐️⭐️⭐️⭐️</div>
       </div>
-      <img
-        src="https://m.media-amazon.com/images/I/51Ub7jVwu7L._MCnd_AC_.jpg"
-        alt="tv"
-      />
+      <img src={image} alt="tv" />
       <button>Add to Basket</button>
     </div>
   );
