@@ -10,7 +10,7 @@
   background-color: #f0f0f0;
   border-radius: 4%;
   padding: 2em;
-  min-height: 50px;
+  flex-wrap: wrap;
   width: 300px;
   margin-right: 20px;
   margin-top: 20px;
@@ -34,4 +34,27 @@ button:hover {
 }
 .checkout input {
   margin-right: 5px;
+}
+
+.checkout__ad {
+  display: flex;
+  flex-direction: column;
+}
+.checkout__ad h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.checkout__product {
+  margin-top: 50px;
+  display: flex;
+}
+.checkout_des {
+  margin-left: 40px;
+}
+.checkout_des p,
+strong {
+  font-weight: 700;
+  font-size: 1.1em;
 }
