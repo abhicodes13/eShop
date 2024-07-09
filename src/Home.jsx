@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./home.png";
+import img from "./hun.png";
 import "./Home.css";
 import Prod from "./Prod";
 
