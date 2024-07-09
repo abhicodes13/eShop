@@ -3,17 +3,20 @@ import "./Header.css";
 import ShoppingBasketRoundedIcon from "@mui/icons-material/ShoppingBasketRounded";
 import LocalGroceryStoreRoundedIcon from "@mui/icons-material/LocalGroceryStoreRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <div className="header__logo">
-        <LocalGroceryStoreRoundedIcon
-          fontSize="large"
-          className="header__logoImage"
-        />
-        <h2 className="header__logoTitle">eShop</h2>
-      </div>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="header__logo">
+          <LocalGroceryStoreRoundedIcon
+            fontSize="large"
+            className="header__logoImage"
+          />
+          <h2 className="header__logoTitle">eShop</h2>
+        </div>
+      </Link>
+
       <div className="header__search">
         <input type="text" className="header__searchInput" />
         <SearchRoundedIcon className="header__searchIcon" />
@@ -28,11 +31,13 @@ function Header() {
           <span className="nav__itemLineOne">Your</span>
           <span className="nav__itemLineTwo">Shop</span>
         </div>
-
-        <div className="nav__item">
-          <ShoppingBasketRoundedIcon className="nav__itemBasket" />
-          <span className="nav__itemLineTwo nav__basketCount">0</span>
-        </div>
+        <Link to="/checkout">
+          {" "}
+          <div className="nav__item">
+            <ShoppingBasketRoundedIcon className="nav__itemBasket" />
+            <span className="nav__itemLineTwo nav__basketCount">0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
