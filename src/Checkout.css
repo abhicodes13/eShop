@@ -1,0 +1,37 @@
+.checkout {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout__right {
+  overflow: visible;
+  border: 0.5px solid #a4a29f;
+  background-color: #f0f0f0;
+  border-radius: 4%;
+  padding: 2em;
+  min-height: 50px;
+  width: 300px;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+button {
+  margin-top: 10px;
+  justify-self: center;
+  background-color: #ff9f00;
+  padding: 5px;
+  border: 0.5px solid;
+}
+button:hover {
+  background-color: #db8701;
+}
+
+.checkout__box p:first-child {
+  margin-bottom: 8px;
+}
+.checkout input {
+  margin-right: 5px;
+}
